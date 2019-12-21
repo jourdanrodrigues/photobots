@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <link rel="stylesheet" href="/main.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+    <body>
+        <form onsubmit="return updateEmail()" style="width: 100%; display: flex; justify-content: center">
+            <label style="display: flex; flex-direction: column">
+                <span>Cole aqui:</span>
+                <textarea name="code" required style="height: 10rem; width: 30rem"></textarea>
+                <button type="submit" style="height: 3rem; margin-top: .5rem; cursor: pointer">Atualizar</button>
+            </label>
+        </form>
+        <div class="info"></div>
+        <div class="votes-wrapper">
+            <div class="voted"></div>
+            <div class="waiting"></div>
+            <div class="expired"></div>
+        </div>
+    </body>
+</html>
